@@ -11,7 +11,7 @@ gulp.task('sass', function () {
 gulp.task('pug', function() {
   return gulp.src('src/views/*.pug')
     .pipe(pug())
-    .pipe(gulp.dest('src/dest'))
+    .pipe(gulp.dest('dist'))
 });
 
 gulp.task('default', function () {
