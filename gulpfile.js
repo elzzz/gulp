@@ -3,9 +3,9 @@ const sass = require('gulp-sass');
 const pug = require('gulp-pug');
 
 gulp.task('sass', function () {
-  return gulp.src('./sass/*.sass')
+  return gulp.src('src/stylesheets/*.sass')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./css'));
+    .pipe(gulp.dest('dist/css'));
 });
 
 gulp.task('pug', function() {
